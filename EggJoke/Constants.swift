@@ -1,1 +1,1 @@
-API_KEY= "1234"
+let API_KEY="1234"

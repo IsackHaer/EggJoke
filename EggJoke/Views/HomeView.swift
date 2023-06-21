@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
     @EnvironmentObject private var vm: MainViewModel
     var body: some View {
-        Text(vm.getAPIKey() ?? "Failed to find .env")
+        Text(API_KEY)
     }
 }
 

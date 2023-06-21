@@ -48,6 +48,7 @@
 		DCD373AD2A43065200CD3492 /* EggJokeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggJokeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DCD373BD2A430A8C00CD3492 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		DCD373BF2A430A9F00CD3492 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DCD373C32A4319A000CD3492 /* .env.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = .env.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +79,7 @@
 		DCD373842A43065100CD3492 = {
 			isa = PBXGroup;
 			children = (
+				DCD373C32A4319A000CD3492 /* .env.md */,
 				DCD3738F2A43065100CD3492 /* EggJoke */,
 				DCD373A02A43065200CD3492 /* EggJokeTests */,
 				DCD373AA2A43065200CD3492 /* EggJokeUITests */,

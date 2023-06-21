@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct EggJokeApp: App {
+    
+    @StateObject private var vm = MainViewModel()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(vm)
         }
     }
 }

@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct HomeView: View {
+    @EnvironmentObject private var vm: MainViewModel
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(vm.getAPIKey() ?? "Failed to find .env")
     }
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+            .environmentObject(MainViewModel())
     }
 }

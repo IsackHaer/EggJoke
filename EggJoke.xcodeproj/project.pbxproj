@@ -80,6 +80,7 @@
 		DCD373842A43065100CD3492 = {
 			isa = PBXGroup;
 			children = (
+				DCD373C42A431D3A00CD3492 /* Constants.swift */,
 				DCD3738F2A43065100CD3492 /* EggJoke */,
 				DCD373A02A43065200CD3492 /* EggJokeTests */,
 				DCD373AA2A43065200CD3492 /* EggJokeUITests */,
@@ -109,7 +110,6 @@
 				DCD373922A43065100CD3492 /* ContentView.swift */,
 				DCD373942A43065200CD3492 /* Assets.xcassets */,
 				DCD373962A43065200CD3492 /* Preview Content */,
-				DCD373C42A431D3A00CD3492 /* Constants.swift */,
 			);
 			path = EggJoke;
 			sourceTree = "<group>";

@@ -16,6 +16,7 @@
 		DCD373AE2A43065200CD3492 /* EggJokeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD373AD2A43065200CD3492 /* EggJokeUITestsLaunchTests.swift */; };
 		DCD373BE2A430A8C00CD3492 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD373BD2A430A8C00CD3492 /* MainViewModel.swift */; };
 		DCD373C02A430A9F00CD3492 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD373BF2A430A9F00CD3492 /* HomeView.swift */; };
+		DCD373C52A431D3A00CD3492 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD373C42A431D3A00CD3492 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		DCD373AD2A43065200CD3492 /* EggJokeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggJokeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DCD373BD2A430A8C00CD3492 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		DCD373BF2A430A9F00CD3492 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DCD373C42A431D3A00CD3492 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				DCD373922A43065100CD3492 /* ContentView.swift */,
 				DCD373942A43065200CD3492 /* Assets.xcassets */,
 				DCD373962A43065200CD3492 /* Preview Content */,
+				DCD373C42A431D3A00CD3492 /* Constants.swift */,
 			);
 			path = EggJoke;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCD373C52A431D3A00CD3492 /* Constants.swift in Sources */,
 				DCD373932A43065100CD3492 /* ContentView.swift in Sources */,
 				DCD373C02A430A9F00CD3492 /* HomeView.swift in Sources */,
 				DCD373912A43065100CD3492 /* EggJokeApp.swift in Sources */,

@@ -1,0 +1,630 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DCD373912A43065100CD3492 /* EggJokeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD373902A43065100CD3492 /* EggJokeApp.swift */; };
+		DCD373932A43065100CD3492 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD373922A43065100CD3492 /* ContentView.swift */; };
+		DCD373952A43065200CD3492 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCD373942A43065200CD3492 /* Assets.xcassets */; };
+		DCD373982A43065200CD3492 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCD373972A43065200CD3492 /* Preview Assets.xcassets */; };
+		DCD373A22A43065200CD3492 /* EggJokeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD373A12A43065200CD3492 /* EggJokeTests.swift */; };
+		DCD373AC2A43065200CD3492 /* EggJokeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD373AB2A43065200CD3492 /* EggJokeUITests.swift */; };
+		DCD373AE2A43065200CD3492 /* EggJokeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD373AD2A43065200CD3492 /* EggJokeUITestsLaunchTests.swift */; };
+		DCD373BE2A430A8C00CD3492 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD373BD2A430A8C00CD3492 /* MainViewModel.swift */; };
+		DCD373C02A430A9F00CD3492 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD373BF2A430A9F00CD3492 /* HomeView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DCD3739E2A43065200CD3492 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD373852A43065100CD3492 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCD3738C2A43065100CD3492;
+			remoteInfo = EggJoke;
+		};
+		DCD373A82A43065200CD3492 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD373852A43065100CD3492 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCD3738C2A43065100CD3492;
+			remoteInfo = EggJoke;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DCD3738D2A43065100CD3492 /* EggJoke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EggJoke.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCD373902A43065100CD3492 /* EggJokeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggJokeApp.swift; sourceTree = "<group>"; };
+		DCD373922A43065100CD3492 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DCD373942A43065200CD3492 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCD373972A43065200CD3492 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DCD3739D2A43065200CD3492 /* EggJokeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EggJokeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCD373A12A43065200CD3492 /* EggJokeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggJokeTests.swift; sourceTree = "<group>"; };
+		DCD373A72A43065200CD3492 /* EggJokeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EggJokeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCD373AB2A43065200CD3492 /* EggJokeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggJokeUITests.swift; sourceTree = "<group>"; };
+		DCD373AD2A43065200CD3492 /* EggJokeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggJokeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DCD373BD2A430A8C00CD3492 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		DCD373BF2A430A9F00CD3492 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCD3738A2A43065100CD3492 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD3739A2A43065200CD3492 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD373A42A43065200CD3492 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCD373842A43065100CD3492 = {
+			isa = PBXGroup;
+			children = (
+				DCD3738F2A43065100CD3492 /* EggJoke */,
+				DCD373A02A43065200CD3492 /* EggJokeTests */,
+				DCD373AA2A43065200CD3492 /* EggJokeUITests */,
+				DCD3738E2A43065100CD3492 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCD3738E2A43065100CD3492 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCD3738D2A43065100CD3492 /* EggJoke.app */,
+				DCD3739D2A43065200CD3492 /* EggJokeTests.xctest */,
+				DCD373A72A43065200CD3492 /* EggJokeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCD3738F2A43065100CD3492 /* EggJoke */ = {
+			isa = PBXGroup;
+			children = (
+				DCD373C22A430AD500CD3492 /* Utilities */,
+				DCD373C12A430AAE00CD3492 /* Components */,
+				DCD373BC2A43068F00CD3492 /* ViewModel */,
+				DCD373BB2A43068900CD3492 /* Views */,
+				DCD373BA2A43068000CD3492 /* Model */,
+				DCD373902A43065100CD3492 /* EggJokeApp.swift */,
+				DCD373922A43065100CD3492 /* ContentView.swift */,
+				DCD373942A43065200CD3492 /* Assets.xcassets */,
+				DCD373962A43065200CD3492 /* Preview Content */,
+			);
+			path = EggJoke;
+			sourceTree = "<group>";
+		};
+		DCD373962A43065200CD3492 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DCD373972A43065200CD3492 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DCD373A02A43065200CD3492 /* EggJokeTests */ = {
+			isa = PBXGroup;
+			children = (
+				DCD373A12A43065200CD3492 /* EggJokeTests.swift */,
+			);
+			path = EggJokeTests;
+			sourceTree = "<group>";
+		};
+		DCD373AA2A43065200CD3492 /* EggJokeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DCD373AB2A43065200CD3492 /* EggJokeUITests.swift */,
+				DCD373AD2A43065200CD3492 /* EggJokeUITestsLaunchTests.swift */,
+			);
+			path = EggJokeUITests;
+			sourceTree = "<group>";
+		};
+		DCD373BA2A43068000CD3492 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DCD373BB2A43068900CD3492 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DCD373BF2A430A9F00CD3492 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DCD373BC2A43068F00CD3492 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DCD373BD2A430A8C00CD3492 /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DCD373C12A430AAE00CD3492 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		DCD373C22A430AD500CD3492 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCD3738C2A43065100CD3492 /* EggJoke */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCD373B12A43065200CD3492 /* Build configuration list for PBXNativeTarget "EggJoke" */;
+			buildPhases = (
+				DCD373892A43065100CD3492 /* Sources */,
+				DCD3738A2A43065100CD3492 /* Frameworks */,
+				DCD3738B2A43065100CD3492 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EggJoke;
+			productName = EggJoke;
+			productReference = DCD3738D2A43065100CD3492 /* EggJoke.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DCD3739C2A43065200CD3492 /* EggJokeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCD373B42A43065200CD3492 /* Build configuration list for PBXNativeTarget "EggJokeTests" */;
+			buildPhases = (
+				DCD373992A43065200CD3492 /* Sources */,
+				DCD3739A2A43065200CD3492 /* Frameworks */,
+				DCD3739B2A43065200CD3492 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCD3739F2A43065200CD3492 /* PBXTargetDependency */,
+			);
+			name = EggJokeTests;
+			productName = EggJokeTests;
+			productReference = DCD3739D2A43065200CD3492 /* EggJokeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DCD373A62A43065200CD3492 /* EggJokeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCD373B72A43065200CD3492 /* Build configuration list for PBXNativeTarget "EggJokeUITests" */;
+			buildPhases = (
+				DCD373A32A43065200CD3492 /* Sources */,
+				DCD373A42A43065200CD3492 /* Frameworks */,
+				DCD373A52A43065200CD3492 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCD373A92A43065200CD3492 /* PBXTargetDependency */,
+			);
+			name = EggJokeUITests;
+			productName = EggJokeUITests;
+			productReference = DCD373A72A43065200CD3492 /* EggJokeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCD373852A43065100CD3492 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					DCD3738C2A43065100CD3492 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					DCD3739C2A43065200CD3492 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = DCD3738C2A43065100CD3492;
+					};
+					DCD373A62A43065200CD3492 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = DCD3738C2A43065100CD3492;
+					};
+				};
+			};
+			buildConfigurationList = DCD373882A43065100CD3492 /* Build configuration list for PBXProject "EggJoke" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCD373842A43065100CD3492;
+			productRefGroup = DCD3738E2A43065100CD3492 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCD3738C2A43065100CD3492 /* EggJoke */,
+				DCD3739C2A43065200CD3492 /* EggJokeTests */,
+				DCD373A62A43065200CD3492 /* EggJokeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCD3738B2A43065100CD3492 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD373982A43065200CD3492 /* Preview Assets.xcassets in Resources */,
+				DCD373952A43065200CD3492 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD3739B2A43065200CD3492 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD373A52A43065200CD3492 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCD373892A43065100CD3492 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD373932A43065100CD3492 /* ContentView.swift in Sources */,
+				DCD373C02A430A9F00CD3492 /* HomeView.swift in Sources */,
+				DCD373912A43065100CD3492 /* EggJokeApp.swift in Sources */,
+				DCD373BE2A430A8C00CD3492 /* MainViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD373992A43065200CD3492 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD373A22A43065200CD3492 /* EggJokeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD373A32A43065200CD3492 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD373AC2A43065200CD3492 /* EggJokeUITests.swift in Sources */,
+				DCD373AE2A43065200CD3492 /* EggJokeUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCD3739F2A43065200CD3492 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCD3738C2A43065100CD3492 /* EggJoke */;
+			targetProxy = DCD3739E2A43065200CD3492 /* PBXContainerItemProxy */;
+		};
+		DCD373A92A43065200CD3492 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCD3738C2A43065100CD3492 /* EggJoke */;
+			targetProxy = DCD373A82A43065200CD3492 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DCD373AF2A43065200CD3492 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DCD373B02A43065200CD3492 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCD373B22A43065200CD3492 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EggJoke/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.haering.EggJoke;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DCD373B32A43065200CD3492 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EggJoke/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.haering.EggJoke;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DCD373B52A43065200CD3492 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.haering.EggJokeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EggJoke.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EggJoke";
+			};
+			name = Debug;
+		};
+		DCD373B62A43065200CD3492 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.haering.EggJokeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EggJoke.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EggJoke";
+			};
+			name = Release;
+		};
+		DCD373B82A43065200CD3492 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.haering.EggJokeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EggJoke;
+			};
+			name = Debug;
+		};
+		DCD373B92A43065200CD3492 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.haering.EggJokeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EggJoke;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCD373882A43065100CD3492 /* Build configuration list for PBXProject "EggJoke" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCD373AF2A43065200CD3492 /* Debug */,
+				DCD373B02A43065200CD3492 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCD373B12A43065200CD3492 /* Build configuration list for PBXNativeTarget "EggJoke" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCD373B22A43065200CD3492 /* Debug */,
+				DCD373B32A43065200CD3492 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCD373B42A43065200CD3492 /* Build configuration list for PBXNativeTarget "EggJokeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCD373B52A43065200CD3492 /* Debug */,
+				DCD373B62A43065200CD3492 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCD373B72A43065200CD3492 /* Build configuration list for PBXNativeTarget "EggJokeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCD373B82A43065200CD3492 /* Debug */,
+				DCD373B92A43065200CD3492 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCD373852A43065100CD3492 /* Project object */;
+}

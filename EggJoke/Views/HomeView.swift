@@ -10,7 +10,11 @@ import SwiftUI
 struct HomeView: View {
     @EnvironmentObject private var vm: MainViewModel
     var body: some View {
-        Text(API_KEY)
+        VStack {
+            Text(TRANSLATE_KEY)
+            Text(HUMOR_KEY)
+            Text(NINJA_KEY)
+        }
     }
 }
 

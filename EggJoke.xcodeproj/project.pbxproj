@@ -17,6 +17,8 @@
 		DCD373BE2A430A8C00CD3492 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD373BD2A430A8C00CD3492 /* MainViewModel.swift */; };
 		DCD373C02A430A9F00CD3492 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD373BF2A430A9F00CD3492 /* HomeView.swift */; };
 		DCD373C52A431D3A00CD3492 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD373C42A431D3A00CD3492 /* Constants.swift */; };
+		DCD373C72A4330B900CD3492 /* TranslationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD373C62A4330B900CD3492 /* TranslationView.swift */; };
+		DCD373C92A43313100CD3492 /* TranslationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD373C82A43313100CD3492 /* TranslationResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC60BDBD2A45AD6400F34A8D /* Pflichtenheft Batch005.pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pflichtenheft Batch005.pages"; sourceTree = "<group>"; };
+		DC60BDBE2A45AD7800F34A8D /* FigmaLink.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = FigmaLink.md; sourceTree = "<group>"; };
 		DCD3738D2A43065100CD3492 /* EggJoke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EggJoke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCD373902A43065100CD3492 /* EggJokeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggJokeApp.swift; sourceTree = "<group>"; };
 		DCD373922A43065100CD3492 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,6 +54,8 @@
 		DCD373BD2A430A8C00CD3492 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		DCD373BF2A430A9F00CD3492 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		DCD373C42A431D3A00CD3492 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DCD373C62A4330B900CD3492 /* TranslationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationView.swift; sourceTree = "<group>"; };
+		DCD373C82A43313100CD3492 /* TranslationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,8 @@
 		DCD373842A43065100CD3492 = {
 			isa = PBXGroup;
 			children = (
+				DC60BDBE2A45AD7800F34A8D /* FigmaLink.md */,
+				DC60BDBD2A45AD6400F34A8D /* Pflichtenheft Batch005.pages */,
 				DCD373C42A431D3A00CD3492 /* Constants.swift */,
 				DCD3738F2A43065100CD3492 /* EggJoke */,
 				DCD373A02A43065200CD3492 /* EggJokeTests */,
@@ -142,6 +150,7 @@
 		DCD373BA2A43068000CD3492 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DCD373C82A43313100CD3492 /* TranslationResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -150,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				DCD373BF2A430A9F00CD3492 /* HomeView.swift */,
+				DCD373C62A4330B900CD3492 /* TranslationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -306,6 +316,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCD373C92A43313100CD3492 /* TranslationResponse.swift in Sources */,
+				DCD373C72A4330B900CD3492 /* TranslationView.swift in Sources */,
 				DCD373C52A431D3A00CD3492 /* Constants.swift in Sources */,
 				DCD373932A43065100CD3492 /* ContentView.swift in Sources */,
 				DCD373C02A430A9F00CD3492 /* HomeView.swift in Sources */,

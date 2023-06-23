@@ -8,28 +8,41 @@
 import Foundation
 
 class MainViewModel: ObservableObject {
-
-    func getAPIKey() -> String? {
-        guard let filePath = Bundle.main.path(forResource: ".env", ofType: nil) else {
-            print(".env not found")
-            return nil
-        }
-        
-        do {
-            let contents = try String(contentsOfFile: filePath, encoding: .utf8)
-            let lines = contents.components(separatedBy: .newlines)
-            
-            for line in lines {
-                let components = line.components(separatedBy: "=")
-                if components.count == 2 && components[0] == "API_KEY" {
-                    return components[1]
-                }
-            }
-        } catch {
-            print("Error reading .env file: \(error)")
-        }
-        
-        return nil
+    enum EJError: Error {
+        case invalidURL, invalidRESPONSE, invalidDATA
     }
     
+    @Published var translation = [TranslationResponse.Translation]()
+    @Published var translateTO = "DE"
+    @Published var textToTranslateFROM = ""
+    @Published var errorMessage = ""
+    @Published var alertOn = false
+    
+    func fillTranslationList() async {
+        do {
+            translation = try await fetchTranslation().translations
+        } catch {
+            errorMessage = "\(error)"
+            alertOn.toggle()
+        }
+    }
+    
+    func fetchTranslation() async throws -> TranslationResponse {
+        guard let url = URL(string: "https://api-free.deepl.com/v2/translate?text=\(textToTranslateFROM)&target_lang=\(translateTO)&auth_key=\(TRANSLATE_KEY)") else {
+            throw EJError.invalidURL
+        }
+        
+        let (data, response) = try await URLSession.shared.data(from: url)
+        guard let resonse = response as? HTTPURLResponse else { throw EJError.invalidRESPONSE}
+        if resonse.statusCode == 200{
+            do {
+                return try JSONDecoder().decode(TranslationResponse.self, from: data)
+            } catch {
+                throw EJError.invalidDATA
+            }
+        } else {
+            print(resonse.statusCode)
+            throw EJError.invalidRESPONSE
+        }
+    }
 }

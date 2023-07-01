@@ -18,12 +18,12 @@ struct TranslationView: View {
             Button("Translate"){
                 vm.translation = []
                 Task {
-                    await vm.fillTranslationList()
+                    await vm.getTranslation()
                 }
             }
         }
         .task {
-            await vm.fillTranslationList()
+            await vm.getTranslation()
         }
     }
 }

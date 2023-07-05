@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC3F32632A52F38400D0F1CD /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3F32622A52F38400D0F1CD /* TestView.swift */; };
+		DC3F32652A5301B100D0F1CD /* JokeFolded.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3F32642A5301B100D0F1CD /* JokeFolded.swift */; };
+		DC3F32672A53090800D0F1CD /* JokeUnfolded.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3F32662A53090800D0F1CD /* JokeUnfolded.swift */; };
+		DC5A29652A50380E006D4CFB /* EggRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5A29642A50380E006D4CFB /* EggRepository.swift */; };
+		DC5A29682A5039EC006D4CFB /* LibraryDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC5A29662A5039EC006D4CFB /* LibraryDataModel.xcdatamodeld */; };
+		DC5A296A2A5040A1006D4CFB /* PresentJoke.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5A29692A5040A1006D4CFB /* PresentJoke.swift */; };
+		DC5A296E2A50575F006D4CFB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5A296D2A50575F006D4CFB /* DetailView.swift */; };
 		DC60BDC02A45C1BE00F34A8D /* NinjaJokeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC60BDBF2A45C1BE00F34A8D /* NinjaJokeResponse.swift */; };
 		DC69EE702A4A1FD50032A7DE /* ChuckJokeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC69EE6F2A4A1FD50032A7DE /* ChuckJokeResponse.swift */; };
 		DCB700D42A4AC501009AE374 /* JokeAnyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB700D32A4AC501009AE374 /* JokeAnyResponse.swift */; };
@@ -42,6 +49,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC3F32622A52F38400D0F1CD /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		DC3F32642A5301B100D0F1CD /* JokeFolded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeFolded.swift; sourceTree = "<group>"; };
+		DC3F32662A53090800D0F1CD /* JokeUnfolded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeUnfolded.swift; sourceTree = "<group>"; };
+		DC5A29642A50380E006D4CFB /* EggRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggRepository.swift; sourceTree = "<group>"; };
+		DC5A29672A5039EC006D4CFB /* LibraryDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LibraryDataModel.xcdatamodel; sourceTree = "<group>"; };
+		DC5A29692A5040A1006D4CFB /* PresentJoke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentJoke.swift; sourceTree = "<group>"; };
+		DC5A296D2A50575F006D4CFB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		DC60BDBD2A45AD6400F34A8D /* Pflichtenheft Batch005.pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pflichtenheft Batch005.pages"; sourceTree = "<group>"; };
 		DC60BDBE2A45AD7800F34A8D /* FigmaLink.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = FigmaLink.md; sourceTree = "<group>"; };
 		DC60BDBF2A45C1BE00F34A8D /* NinjaJokeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NinjaJokeResponse.swift; sourceTree = "<group>"; };
@@ -89,6 +103,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC3F325F2A52DA5D00D0F1CD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DC5A29632A5037F9006D4CFB /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				DC5A29642A50380E006D4CFB /* EggRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 		DCD373842A43065100CD3492 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +144,8 @@
 		DCD3738F2A43065100CD3492 /* EggJoke */ = {
 			isa = PBXGroup;
 			children = (
+				DC3F325F2A52DA5D00D0F1CD /* Extensions */,
+				DC5A29632A5037F9006D4CFB /* Repository */,
 				DCD373C22A430AD500CD3492 /* Utilities */,
 				DCD373C12A430AAE00CD3492 /* Components */,
 				DCD373BC2A43068F00CD3492 /* ViewModel */,
@@ -124,6 +155,7 @@
 				DCD373922A43065100CD3492 /* ContentView.swift */,
 				DCD373942A43065200CD3492 /* Assets.xcassets */,
 				DCD373962A43065200CD3492 /* Preview Content */,
+				DC5A29662A5039EC006D4CFB /* LibraryDataModel.xcdatamodeld */,
 			);
 			path = EggJoke;
 			sourceTree = "<group>";
@@ -160,6 +192,7 @@
 				DC60BDBF2A45C1BE00F34A8D /* NinjaJokeResponse.swift */,
 				DC69EE6F2A4A1FD50032A7DE /* ChuckJokeResponse.swift */,
 				DCB700D32A4AC501009AE374 /* JokeAnyResponse.swift */,
+				DC5A29692A5040A1006D4CFB /* PresentJoke.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -169,6 +202,8 @@
 			children = (
 				DCD373BF2A430A9F00CD3492 /* HomeView.swift */,
 				DCD373C62A4330B900CD3492 /* TranslationView.swift */,
+				DC5A296D2A50575F006D4CFB /* DetailView.swift */,
+				DC3F32622A52F38400D0F1CD /* TestView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -184,6 +219,8 @@
 		DCD373C12A430AAE00CD3492 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				DC3F32642A5301B100D0F1CD /* JokeFolded.swift */,
+				DC3F32662A53090800D0F1CD /* JokeUnfolded.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -327,13 +364,20 @@
 			files = (
 				DCD373C92A43313100CD3492 /* TranslationResponse.swift in Sources */,
 				DC60BDC02A45C1BE00F34A8D /* NinjaJokeResponse.swift in Sources */,
+				DC3F32672A53090800D0F1CD /* JokeUnfolded.swift in Sources */,
 				DCB700D42A4AC501009AE374 /* JokeAnyResponse.swift in Sources */,
+				DC5A296E2A50575F006D4CFB /* DetailView.swift in Sources */,
 				DCD373C72A4330B900CD3492 /* TranslationView.swift in Sources */,
 				DCD373C52A431D3A00CD3492 /* Constants.swift in Sources */,
+				DC3F32632A52F38400D0F1CD /* TestView.swift in Sources */,
+				DC5A29652A50380E006D4CFB /* EggRepository.swift in Sources */,
 				DCD373932A43065100CD3492 /* ContentView.swift in Sources */,
 				DCD373C02A430A9F00CD3492 /* HomeView.swift in Sources */,
 				DC69EE702A4A1FD50032A7DE /* ChuckJokeResponse.swift in Sources */,
+				DC5A29682A5039EC006D4CFB /* LibraryDataModel.xcdatamodeld in Sources */,
+				DC3F32652A5301B100D0F1CD /* JokeFolded.swift in Sources */,
 				DCD373912A43065100CD3492 /* EggJokeApp.swift in Sources */,
+				DC5A296A2A5040A1006D4CFB /* PresentJoke.swift in Sources */,
 				DCD373BE2A430A8C00CD3492 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -653,6 +697,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DC5A29662A5039EC006D4CFB /* LibraryDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DC5A29672A5039EC006D4CFB /* LibraryDataModel.xcdatamodel */,
+			);
+			currentVersion = DC5A29672A5039EC006D4CFB /* LibraryDataModel.xcdatamodel */;
+			path = LibraryDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DCD373852A43065100CD3492 /* Project object */;
 }

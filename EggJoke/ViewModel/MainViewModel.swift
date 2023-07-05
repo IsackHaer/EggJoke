@@ -13,13 +13,27 @@ class MainViewModel: ObservableObject {
         case invalidURL, invalidRESPONSE, invalidDATA
     }
     
+    @Published var repo = EggRepository()
+    
     @Published var translation = [TranslationResponse.Translation]()
     @Published var translateTO = "DE"
     @Published var textToTranslateFROM = ""
     @Published var errorMessage = ""
     @Published var alertOn = false
     
-    @Published var allJokes = [String]()
+    var allJokes = [String]()
+    @Published var presentJokes = [PresentJoke]()
+    
+    func prepareJokes(jokes: [String]) {
+        if allJokes.count >= 100 {
+            for joke in jokes {
+                let presentable = PresentJoke(background: repo.randomBackgroundImage.randomElement() ?? "egg-softboiled", foreground: repo.randomForegroundImage.randomElement() ?? "egg-softboiled", rotation: repo.randomRotation, joke: joke)
+                if !presentJokes.contains(where: {$0.joke == presentable.joke}) {
+                    presentJokes.append(presentable)
+                }
+            }
+        }
+    }
     
     func getTranslation() async {
         do {
@@ -41,27 +55,27 @@ class MainViewModel: ObservableObject {
         case "Ninja" :
             do {
                 try await fetchDataWithURLRequest(generateURLRequest(urlArray?.value ?? "", NINJA_KEY, "X-Api-Key"))
+                prepareJokes(jokes: allJokes)
             } catch {
                 print(error)
             }
         case "Chuck" :
             do {
                 try await allJokes.append(fetchData(generateBaseURL(urlArray?.value ?? ""), ChuckJokeResponse.self).value)
+                prepareJokes(jokes: allJokes)
             } catch {
                 print(error)
             }
         case "JokeAny" :
             do {
                 try await allJokes.append(fetchData(generateBaseURL(urlArray?.value ?? ""), JokeAnyResponse.self).joke)
+                prepareJokes(jokes: allJokes)
             }
         default : print("urlArray from fetchJokes had an unexpected dictionary key of unknown...")
         }
     }
     
     func generateBaseURL(_ url: String) throws -> URL {
-        if url.contains("https://api.api-ninjas.com") {
-            
-        }
         guard let url = URL(string: url) else {
             print(url)
             throw CustomError.invalidURL
@@ -85,6 +99,8 @@ class MainViewModel: ObservableObject {
             do {
                 return try JSONDecoder().decode(T.self, from: data)
             } catch {
+                print(error)
+                print(error.localizedDescription)
                 throw CustomError.invalidDATA
             }
         } else {
@@ -104,6 +120,7 @@ class MainViewModel: ObservableObject {
                 }
             } catch {
                 print(error)
+                print(error.localizedDescription)
                 throw CustomError.invalidDATA
             }
         } else {

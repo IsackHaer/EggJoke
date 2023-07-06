@@ -39,7 +39,6 @@ struct HomeView: View {
                                     sharedIndice = indice
                                 }
                             }
-                        
                     }
                 }
                 
@@ -49,7 +48,7 @@ struct HomeView: View {
             }
         }
         .task {
-            while vm.allJokes.count < 100 {
+            while vm.allJokes.count < 10 {
                 do {
                     try await vm.fetchJokes()
                 } catch {

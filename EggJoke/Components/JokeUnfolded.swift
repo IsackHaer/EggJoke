@@ -12,6 +12,8 @@ struct JokeUnfolded: View {
     @Binding var show: Bool
     var joke: PresentJoke
     var indice: Int
+    @State private var showSheet = false
+    @State private var currentDetentSize = PresentationDetent.medium
     
     var body: some View {
         ZStack {
@@ -70,7 +72,7 @@ struct JokeUnfolded: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                 Divider()
                 Button("Translate"){
-                    //TODO: navigate to translateView
+                    showSheet.toggle()
                 }
             }
                 .padding(20)
@@ -83,6 +85,10 @@ struct JokeUnfolded: View {
                 .offset(y: 250)
                 .padding(20)
         )
+        .sheet(isPresented: $showSheet) {
+            TranslationView(joke: joke.joke, isOpen: $showSheet)
+                .presentationDetents([.medium, .large], selection: $currentDetentSize)
+        }
     }
 }
 

@@ -8,5 +8,5 @@
 import Foundation
 
 struct JokeAnyResponse: Codable, Hashable {
-    let joke: String
+    let joke: String?
 }

@@ -29,6 +29,7 @@
 		DCD373C52A431D3A00CD3492 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD373C42A431D3A00CD3492 /* Constants.swift */; };
 		DCD373C72A4330B900CD3492 /* TranslationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD373C62A4330B900CD3492 /* TranslationView.swift */; };
 		DCD373C92A43313100CD3492 /* TranslationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD373C82A43313100CD3492 /* TranslationResponse.swift */; };
+		DCFA2AA22A56B2CB00CE840E /* TranslationView++.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFA2AA12A56B2CB00CE840E /* TranslationView++.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		DCD373C42A431D3A00CD3492 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DCD373C62A4330B900CD3492 /* TranslationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationView.swift; sourceTree = "<group>"; };
 		DCD373C82A43313100CD3492 /* TranslationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationResponse.swift; sourceTree = "<group>"; };
+		DCFA2AA12A56B2CB00CE840E /* TranslationView++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TranslationView++.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		DC3F325F2A52DA5D00D0F1CD /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				DCFA2AA12A56B2CB00CE840E /* TranslationView++.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				DCD373932A43065100CD3492 /* ContentView.swift in Sources */,
 				DCD373C02A430A9F00CD3492 /* HomeView.swift in Sources */,
 				DC69EE702A4A1FD50032A7DE /* ChuckJokeResponse.swift in Sources */,
+				DCFA2AA22A56B2CB00CE840E /* TranslationView++.swift in Sources */,
 				DC5A29682A5039EC006D4CFB /* LibraryDataModel.xcdatamodeld in Sources */,
 				DC3F32652A5301B100D0F1CD /* JokeFolded.swift in Sources */,
 				DCD373912A43065100CD3492 /* EggJokeApp.swift in Sources */,

@@ -24,8 +24,12 @@ class MainViewModel: ObservableObject {
     var allJokes = [String]()
     @Published var presentJokes = [PresentJoke]()
     
+    func setLanguage(lang: String){
+        translateTO = lang
+    }
+    
     func prepareJokes(jokes: [String]) {
-        if allJokes.count >= 100 {
+        if allJokes.count >= 10 {
             for joke in jokes {
                 let presentable = PresentJoke(background: repo.randomBackgroundImage.randomElement() ?? "egg-softboiled", foreground: repo.randomForegroundImage.randomElement() ?? "egg-softboiled", rotation: repo.randomRotation, joke: joke)
                 if !presentJokes.contains(where: {$0.joke == presentable.joke}) {
@@ -68,7 +72,10 @@ class MainViewModel: ObservableObject {
             }
         case "JokeAny" :
             do {
-                try await allJokes.append(fetchData(generateBaseURL(urlArray?.value ?? ""), JokeAnyResponse.self).joke)
+                guard let fetchedAnyJoke = try await fetchData(generateBaseURL(urlArray?.value ?? ""), JokeAnyResponse.self).joke else {
+                    return
+                }
+                allJokes.append(fetchedAnyJoke)
                 prepareJokes(jokes: allJokes)
             }
         default : print("urlArray from fetchJokes had an unexpected dictionary key of unknown...")

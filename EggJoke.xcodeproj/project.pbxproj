@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC30F9E22A570A7B00E0367F /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC30F9E12A570A7B00E0367F /* FavoriteView.swift */; };
 		DC3F32632A52F38400D0F1CD /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3F32622A52F38400D0F1CD /* TestView.swift */; };
 		DC3F32652A5301B100D0F1CD /* JokeFolded.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3F32642A5301B100D0F1CD /* JokeFolded.swift */; };
 		DC3F32672A53090800D0F1CD /* JokeUnfolded.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3F32662A53090800D0F1CD /* JokeUnfolded.swift */; };
@@ -30,6 +31,8 @@
 		DCD373C72A4330B900CD3492 /* TranslationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD373C62A4330B900CD3492 /* TranslationView.swift */; };
 		DCD373C92A43313100CD3492 /* TranslationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD373C82A43313100CD3492 /* TranslationResponse.swift */; };
 		DCFA2AA22A56B2CB00CE840E /* TranslationView++.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFA2AA12A56B2CB00CE840E /* TranslationView++.swift */; };
+		DCFA2AA62A56C44700CE840E /* JokeDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DCFA2AA42A56C44700CE840E /* JokeDataModel.xcdatamodeld */; };
+		DCFA2AAB2A56DD0900CE840E /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFA2AAA2A56DD0900CE840E /* ApiService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC30F9E12A570A7B00E0367F /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
 		DC3F32622A52F38400D0F1CD /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		DC3F32642A5301B100D0F1CD /* JokeFolded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeFolded.swift; sourceTree = "<group>"; };
 		DC3F32662A53090800D0F1CD /* JokeUnfolded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeUnfolded.swift; sourceTree = "<group>"; };
@@ -78,6 +82,8 @@
 		DCD373C62A4330B900CD3492 /* TranslationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationView.swift; sourceTree = "<group>"; };
 		DCD373C82A43313100CD3492 /* TranslationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationResponse.swift; sourceTree = "<group>"; };
 		DCFA2AA12A56B2CB00CE840E /* TranslationView++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TranslationView++.swift"; sourceTree = "<group>"; };
+		DCFA2AA52A56C44700CE840E /* JokeDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JokeDataModel.xcdatamodel; sourceTree = "<group>"; };
+		DCFA2AAA2A56DD0900CE840E /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,9 +153,8 @@
 		DCD3738F2A43065100CD3492 /* EggJoke */ = {
 			isa = PBXGroup;
 			children = (
+				DCFA2AA32A56C41D00CE840E /* Data */,
 				DC3F325F2A52DA5D00D0F1CD /* Extensions */,
-				DC5A29632A5037F9006D4CFB /* Repository */,
-				DCD373C22A430AD500CD3492 /* Utilities */,
 				DCD373C12A430AAE00CD3492 /* Components */,
 				DCD373BC2A43068F00CD3492 /* ViewModel */,
 				DCD373BB2A43068900CD3492 /* Views */,
@@ -207,6 +212,7 @@
 				DCD373C62A4330B900CD3492 /* TranslationView.swift */,
 				DC5A296D2A50575F006D4CFB /* DetailView.swift */,
 				DC3F32622A52F38400D0F1CD /* TestView.swift */,
+				DC30F9E12A570A7B00E0367F /* FavoriteView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -228,11 +234,22 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		DCD373C22A430AD500CD3492 /* Utilities */ = {
+		DCFA2AA32A56C41D00CE840E /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				DCFA2AA72A56C4B400CE840E /* Service */,
+				DC5A29632A5037F9006D4CFB /* Repository */,
+				DCFA2AA42A56C44700CE840E /* JokeDataModel.xcdatamodeld */,
 			);
-			path = Utilities;
+			path = Data;
+			sourceTree = "<group>";
+		};
+		DCFA2AA72A56C4B400CE840E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DCFA2AAA2A56DD0900CE840E /* ApiService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,6 +387,7 @@
 				DC3F32672A53090800D0F1CD /* JokeUnfolded.swift in Sources */,
 				DCB700D42A4AC501009AE374 /* JokeAnyResponse.swift in Sources */,
 				DC5A296E2A50575F006D4CFB /* DetailView.swift in Sources */,
+				DCFA2AAB2A56DD0900CE840E /* ApiService.swift in Sources */,
 				DCD373C72A4330B900CD3492 /* TranslationView.swift in Sources */,
 				DCD373C52A431D3A00CD3492 /* Constants.swift in Sources */,
 				DC3F32632A52F38400D0F1CD /* TestView.swift in Sources */,
@@ -378,7 +396,9 @@
 				DCD373C02A430A9F00CD3492 /* HomeView.swift in Sources */,
 				DC69EE702A4A1FD50032A7DE /* ChuckJokeResponse.swift in Sources */,
 				DCFA2AA22A56B2CB00CE840E /* TranslationView++.swift in Sources */,
+				DCFA2AA62A56C44700CE840E /* JokeDataModel.xcdatamodeld in Sources */,
 				DC5A29682A5039EC006D4CFB /* LibraryDataModel.xcdatamodeld in Sources */,
+				DC30F9E22A570A7B00E0367F /* FavoriteView.swift in Sources */,
 				DC3F32652A5301B100D0F1CD /* JokeFolded.swift in Sources */,
 				DCD373912A43065100CD3492 /* EggJokeApp.swift in Sources */,
 				DC5A296A2A5040A1006D4CFB /* PresentJoke.swift in Sources */,
@@ -710,6 +730,16 @@
 			);
 			currentVersion = DC5A29672A5039EC006D4CFB /* LibraryDataModel.xcdatamodel */;
 			path = LibraryDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		DCFA2AA42A56C44700CE840E /* JokeDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DCFA2AA52A56C44700CE840E /* JokeDataModel.xcdatamodel */,
+			);
+			currentVersion = DCFA2AA52A56C44700CE840E /* JokeDataModel.xcdatamodel */;
+			path = JokeDataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

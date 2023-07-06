@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct JokeUnfolded: View {
+    @EnvironmentObject private var vm: MainViewModel
     var namespace: Namespace.ID
     @Binding var show: Bool
     var joke: PresentJoke
@@ -71,8 +72,24 @@ struct JokeUnfolded: View {
                     .matchedGeometryEffect(id: "title\(indice)", in: namespace)
                     .frame(maxWidth: .infinity, alignment: .leading)
                 Divider()
-                Button("Translate"){
-                    showSheet.toggle()
+                HStack {
+                    Button("Translate"){
+                        showSheet.toggle()
+                    }
+                    
+                    Spacer()
+                    
+                    Button {
+                        if vm.savedJokes.contains(where: {$0.joke == joke.joke}) {
+                            let index = vm.savedJokes.firstIndex(where: {$0.joke == joke.joke})
+                            vm.deleteJoke(indexSet: IndexSet(integer: index!))
+                        } else {
+                            vm.saveJoke(background: joke.background, foreground: joke.foreground, rotation: joke.rotation, joke: joke.joke)
+                        }
+                    } label: {
+                        Image(systemName: vm.savedJokes.contains(where: {$0.joke == joke.joke}) ? "star.fill" : "star")
+                    }
+
                 }
             }
                 .padding(20)
@@ -96,5 +113,6 @@ struct JokeUnfolded_Previews: PreviewProvider {
     @Namespace static var namespace
     static var previews: some View {
         JokeUnfolded(namespace: namespace, show: .constant(true), joke: PresentJoke.sharedJoke, indice: 0)
+            .environmentObject(MainViewModel())
     }
 }

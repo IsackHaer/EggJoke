@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreData
 
 @MainActor
 class MainViewModel: ObservableObject {
@@ -14,15 +15,69 @@ class MainViewModel: ObservableObject {
     }
     
     @Published var repo = EggRepository()
+    private var container: NSPersistentContainer
+    
+    var allJokes = [String]()
+    @Published var savedJokes = [SavedJoke]()
+    @Published var presentJokes = [PresentJoke]()
+
     
     @Published var translation = [TranslationResponse.Translation]()
     @Published var translateTO = "DE"
     @Published var textToTranslateFROM = ""
+    
     @Published var errorMessage = ""
     @Published var alertOn = false
     
-    var allJokes = [String]()
-    @Published var presentJokes = [PresentJoke]()
+    init(){
+        container = NSPersistentContainer(name: "JokeDataModel")
+        container.loadPersistentStores{ description, error in
+            if let error = error {
+                fatalError("Failed to load CoreData stacks: \(error)")
+            }
+        }
+        fetchCoreData()
+    }
+    
+    func fetchCoreData(){
+        let request = NSFetchRequest<SavedJoke>(entityName: "SavedJoke")
+        
+        do {
+            savedJokes = try container.viewContext.fetch(request)
+            print(savedJokes)
+        } catch {
+            print("Failed to fetch CoreData: \(error.localizedDescription)")
+        }
+    }
+    
+    func saveJoke(background: String, foreground: String, rotation: Int16, joke: String) {
+        let newJoke = SavedJoke(context: container.viewContext)
+        newJoke.background = background
+        newJoke.foreground = foreground
+        newJoke.rotation = rotation
+        newJoke.joke = joke
+        save()
+    }
+    
+    func deleteJoke(indexSet: IndexSet){
+        guard let index = indexSet.first else {
+            print("Index for deleting the joke is missing.")
+            return
+        }
+        let deleteItem = savedJokes[index]
+        container.viewContext.delete(deleteItem)
+        save()
+    }
+    
+    func save(){
+        do {
+            try container.viewContext.save()
+            fetchCoreData()
+        } catch {
+            print("Save error CoreData: \(error.localizedDescription)")
+        }
+    }
+    
     
     func setLanguage(lang: String){
         translateTO = lang

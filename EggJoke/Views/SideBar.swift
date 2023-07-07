@@ -52,7 +52,7 @@ struct SideBar: View {
     }
 }
 
-struct FavoriteView_Previews: PreviewProvider {
+struct SideBar_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
             SideBar()

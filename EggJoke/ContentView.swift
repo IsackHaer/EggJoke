@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject private var vm: MainViewModel
     var body: some View {
-        NavigationStack{
+        @AppStorage("isDarkMode") var isDarkMode = vm.isDarkMode
+        NavigationStack(path: $vm.navPath){
             HomeView()
+                .preferredColorScheme(isDarkMode ? .dark : .light)
         }
     }
 }

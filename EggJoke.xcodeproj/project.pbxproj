@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC30F9E22A570A7B00E0367F /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC30F9E12A570A7B00E0367F /* FavoriteView.swift */; };
+		DC30F9E22A570A7B00E0367F /* SideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC30F9E12A570A7B00E0367F /* SideBar.swift */; };
 		DC3F32632A52F38400D0F1CD /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3F32622A52F38400D0F1CD /* TestView.swift */; };
 		DC3F32652A5301B100D0F1CD /* JokeFolded.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3F32642A5301B100D0F1CD /* JokeFolded.swift */; };
 		DC3F32672A53090800D0F1CD /* JokeUnfolded.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3F32662A53090800D0F1CD /* JokeUnfolded.swift */; };
@@ -53,7 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DC30F9E12A570A7B00E0367F /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
+		DC30F9E12A570A7B00E0367F /* SideBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBar.swift; sourceTree = "<group>"; };
 		DC3F32622A52F38400D0F1CD /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		DC3F32642A5301B100D0F1CD /* JokeFolded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeFolded.swift; sourceTree = "<group>"; };
 		DC3F32662A53090800D0F1CD /* JokeUnfolded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeUnfolded.swift; sourceTree = "<group>"; };
@@ -212,7 +212,7 @@
 				DCD373C62A4330B900CD3492 /* TranslationView.swift */,
 				DC5A296D2A50575F006D4CFB /* DetailView.swift */,
 				DC3F32622A52F38400D0F1CD /* TestView.swift */,
-				DC30F9E12A570A7B00E0367F /* FavoriteView.swift */,
+				DC30F9E12A570A7B00E0367F /* SideBar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -398,7 +398,7 @@
 				DCFA2AA22A56B2CB00CE840E /* TranslationView++.swift in Sources */,
 				DCFA2AA62A56C44700CE840E /* JokeDataModel.xcdatamodeld in Sources */,
 				DC5A29682A5039EC006D4CFB /* LibraryDataModel.xcdatamodeld in Sources */,
-				DC30F9E22A570A7B00E0367F /* FavoriteView.swift in Sources */,
+				DC30F9E22A570A7B00E0367F /* SideBar.swift in Sources */,
 				DC3F32652A5301B100D0F1CD /* JokeFolded.swift in Sources */,
 				DCD373912A43065100CD3492 /* EggJokeApp.swift in Sources */,
 				DC5A296A2A5040A1006D4CFB /* PresentJoke.swift in Sources */,

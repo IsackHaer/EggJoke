@@ -23,23 +23,40 @@ struct JokeUnfolded: View {
             }
             .background(Color("Background"))
             .ignoresSafeArea()
-            
-            Button {
-                withAnimation(.spring(response: 0.6, dampingFraction: 0.8)) {
-                    show.toggle()
+            VStack(alignment: .trailing) {
+                Button {
+                    withAnimation(.spring(response: 0.6, dampingFraction: 0.8)) {
+                        show.toggle()
+                    }
+                } label: {
+                    Image(systemName: "xmark")
+                        .font(.body.weight(.bold))
+                        .foregroundColor(.secondary)
+                        .padding(12)
+                        .background(.ultraThinMaterial, in: Circle())
                 }
-            } label: {
-                Image(systemName: "xmark")
-                    .font(.body.weight(.bold))
-                    .foregroundColor(.secondary)
-                    .padding(10)
-                    .background(.ultraThinMaterial, in: Circle())
+                
+                Button {
+                    if vm.savedJokes.contains(where: {$0.joke == joke.joke}) {
+                        let index = vm.savedJokes.firstIndex(where: {$0.joke == joke.joke})
+                        vm.deleteJoke(indexSet: IndexSet(integer: index!))
+                    } else {
+                        vm.saveJoke(background: joke.background, foreground: joke.foreground, rotation: joke.rotation, joke: joke.joke)
+                    }
+                } label: {
+                    Image(systemName: vm.savedJokes.contains(where: {$0.joke == joke.joke}) ? "star.fill" : "star")
+                        .font(.body.weight(.bold))
+                        .padding(10)
+                        .background(.ultraThinMaterial, in: Circle())
+                        .foregroundStyle(.yellow)
+                }
+                .padding(.vertical)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
             .padding(.vertical, 50)
             .padding(.horizontal, 20)
             .ignoresSafeArea()
-
+            
         }
     }
     var cover: some View {
@@ -76,20 +93,6 @@ struct JokeUnfolded: View {
                     Button("Translate"){
                         showSheet.toggle()
                     }
-                    
-                    Spacer()
-                    
-                    Button {
-                        if vm.savedJokes.contains(where: {$0.joke == joke.joke}) {
-                            let index = vm.savedJokes.firstIndex(where: {$0.joke == joke.joke})
-                            vm.deleteJoke(indexSet: IndexSet(integer: index!))
-                        } else {
-                            vm.saveJoke(background: joke.background, foreground: joke.foreground, rotation: joke.rotation, joke: joke.joke)
-                        }
-                    } label: {
-                        Image(systemName: vm.savedJokes.contains(where: {$0.joke == joke.joke}) ? "star.fill" : "star")
-                    }
-
                 }
             }
                 .padding(20)

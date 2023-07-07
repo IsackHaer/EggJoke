@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 import CoreData
 
 @MainActor
@@ -14,13 +15,16 @@ class MainViewModel: ObservableObject {
         case invalidURL, invalidRESPONSE, invalidDATA
     }
     
+    @Published var navPath = NavigationPath()
+    @Published var isDarkMode = false
+    
     @Published var repo = EggRepository()
     private var container: NSPersistentContainer
     
     var allJokes = [String]()
     @Published var savedJokes = [SavedJoke]()
     @Published var presentJokes = [PresentJoke]()
-
+    @Published var currentStoredJoke: PresentJoke = PresentJoke.sharedJoke
     
     @Published var translation = [TranslationResponse.Translation]()
     @Published var translateTO = "DE"
@@ -37,6 +41,14 @@ class MainViewModel: ObservableObject {
             }
         }
         fetchCoreData()
+    }
+    
+    func storeCurrentJoke(joke: SavedJoke) {
+        currentStoredJoke = PresentJoke(
+            background: joke.background ?? "",
+            foreground: joke.foreground ?? "",
+            rotation: joke.rotation,
+            joke: joke.joke ?? "")
     }
     
     func fetchCoreData(){

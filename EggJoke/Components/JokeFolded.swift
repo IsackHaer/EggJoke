@@ -22,13 +22,14 @@ struct JokeFolded: View {
                     .matchedGeometryEffect(id: "title\(indice)", in: namespace)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .lineLimit(2)
+                    .shadow(radius: 10)
             }
             .padding(20)
             .background(
                 Rectangle()
                     .fill(.ultraThinMaterial)
                     .mask(RoundedRectangle(cornerRadius: 30, style: .continuous))
-                    .blur(radius: 30)
+                    .blur(radius: 20)
                     .matchedGeometryEffect(id: "blur\(indice)", in: namespace)
             )
         }

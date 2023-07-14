@@ -30,6 +30,15 @@
 		DCD373C52A431D3A00CD3492 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD373C42A431D3A00CD3492 /* Constants.swift */; };
 		DCD373C72A4330B900CD3492 /* TranslationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD373C62A4330B900CD3492 /* TranslationView.swift */; };
 		DCD373C92A43313100CD3492 /* TranslationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD373C82A43313100CD3492 /* TranslationResponse.swift */; };
+		DCEE47692A6032E9005C34F9 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCEE47682A6032E9005C34F9 /* WidgetKit.framework */; };
+		DCEE476B2A6032E9005C34F9 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCEE476A2A6032E9005C34F9 /* SwiftUI.framework */; };
+		DCEE476E2A6032E9005C34F9 /* EggJokeWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE476D2A6032E9005C34F9 /* EggJokeWidgetBundle.swift */; };
+		DCEE47702A6032E9005C34F9 /* EggJokeWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE476F2A6032E9005C34F9 /* EggJokeWidgetLiveActivity.swift */; };
+		DCEE47722A6032E9005C34F9 /* EggJokeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE47712A6032E9005C34F9 /* EggJokeWidget.swift */; };
+		DCEE47752A6032EA005C34F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCEE47742A6032EA005C34F9 /* Assets.xcassets */; };
+		DCEE47772A6032EA005C34F9 /* EggJokeWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DCEE47732A6032E9005C34F9 /* EggJokeWidget.intentdefinition */; };
+		DCEE47782A6032EA005C34F9 /* EggJokeWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DCEE47732A6032E9005C34F9 /* EggJokeWidget.intentdefinition */; };
+		DCEE477B2A6032EA005C34F9 /* EggJokeWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DCEE47662A6032E9005C34F9 /* EggJokeWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DCFA2AA22A56B2CB00CE840E /* TranslationView++.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFA2AA12A56B2CB00CE840E /* TranslationView++.swift */; };
 		DCFA2AA62A56C44700CE840E /* JokeDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DCFA2AA42A56C44700CE840E /* JokeDataModel.xcdatamodeld */; };
 		DCFA2AAB2A56DD0900CE840E /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFA2AAA2A56DD0900CE840E /* ApiService.swift */; };
@@ -50,7 +59,28 @@
 			remoteGlobalIDString = DCD3738C2A43065100CD3492;
 			remoteInfo = EggJoke;
 		};
+		DCEE47792A6032EA005C34F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD373852A43065100CD3492 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCEE47652A6032E9005C34F9;
+			remoteInfo = EggJokeWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DCEE477C2A6032EA005C34F9 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DCEE477B2A6032EA005C34F9 /* EggJokeWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DC30F9E12A570A7B00E0367F /* SideBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBar.swift; sourceTree = "<group>"; };
@@ -81,6 +111,15 @@
 		DCD373C42A431D3A00CD3492 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DCD373C62A4330B900CD3492 /* TranslationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationView.swift; sourceTree = "<group>"; };
 		DCD373C82A43313100CD3492 /* TranslationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationResponse.swift; sourceTree = "<group>"; };
+		DCEE47662A6032E9005C34F9 /* EggJokeWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EggJokeWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCEE47682A6032E9005C34F9 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		DCEE476A2A6032E9005C34F9 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		DCEE476D2A6032E9005C34F9 /* EggJokeWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggJokeWidgetBundle.swift; sourceTree = "<group>"; };
+		DCEE476F2A6032E9005C34F9 /* EggJokeWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggJokeWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		DCEE47712A6032E9005C34F9 /* EggJokeWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggJokeWidget.swift; sourceTree = "<group>"; };
+		DCEE47732A6032E9005C34F9 /* EggJokeWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = EggJokeWidget.intentdefinition; sourceTree = "<group>"; };
+		DCEE47742A6032EA005C34F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCEE47762A6032EA005C34F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCFA2AA12A56B2CB00CE840E /* TranslationView++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TranslationView++.swift"; sourceTree = "<group>"; };
 		DCFA2AA52A56C44700CE840E /* JokeDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JokeDataModel.xcdatamodel; sourceTree = "<group>"; };
 		DCFA2AAA2A56DD0900CE840E /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
@@ -105,6 +144,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCEE47632A6032E9005C34F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCEE476B2A6032E9005C34F9 /* SwiftUI.framework in Frameworks */,
+				DCEE47692A6032E9005C34F9 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +184,8 @@
 				DCD3738F2A43065100CD3492 /* EggJoke */,
 				DCD373A02A43065200CD3492 /* EggJokeTests */,
 				DCD373AA2A43065200CD3492 /* EggJokeUITests */,
+				DCEE476C2A6032E9005C34F9 /* EggJokeWidget */,
+				DCEE47672A6032E9005C34F9 /* Frameworks */,
 				DCD3738E2A43065100CD3492 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -146,6 +196,7 @@
 				DCD3738D2A43065100CD3492 /* EggJoke.app */,
 				DCD3739D2A43065200CD3492 /* EggJokeTests.xctest */,
 				DCD373A72A43065200CD3492 /* EggJokeUITests.xctest */,
+				DCEE47662A6032E9005C34F9 /* EggJokeWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -234,6 +285,28 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		DCEE47672A6032E9005C34F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCEE47682A6032E9005C34F9 /* WidgetKit.framework */,
+				DCEE476A2A6032E9005C34F9 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCEE476C2A6032E9005C34F9 /* EggJokeWidget */ = {
+			isa = PBXGroup;
+			children = (
+				DCEE476D2A6032E9005C34F9 /* EggJokeWidgetBundle.swift */,
+				DCEE476F2A6032E9005C34F9 /* EggJokeWidgetLiveActivity.swift */,
+				DCEE47712A6032E9005C34F9 /* EggJokeWidget.swift */,
+				DCEE47732A6032E9005C34F9 /* EggJokeWidget.intentdefinition */,
+				DCEE47742A6032EA005C34F9 /* Assets.xcassets */,
+				DCEE47762A6032EA005C34F9 /* Info.plist */,
+			);
+			path = EggJokeWidget;
+			sourceTree = "<group>";
+		};
 		DCFA2AA32A56C41D00CE840E /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,10 +335,12 @@
 				DCD373892A43065100CD3492 /* Sources */,
 				DCD3738A2A43065100CD3492 /* Frameworks */,
 				DCD3738B2A43065100CD3492 /* Resources */,
+				DCEE477C2A6032EA005C34F9 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DCEE477A2A6032EA005C34F9 /* PBXTargetDependency */,
 			);
 			name = EggJoke;
 			productName = EggJoke;
@@ -308,6 +383,23 @@
 			productReference = DCD373A72A43065200CD3492 /* EggJokeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		DCEE47652A6032E9005C34F9 /* EggJokeWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCEE477F2A6032EA005C34F9 /* Build configuration list for PBXNativeTarget "EggJokeWidgetExtension" */;
+			buildPhases = (
+				DCEE47622A6032E9005C34F9 /* Sources */,
+				DCEE47632A6032E9005C34F9 /* Frameworks */,
+				DCEE47642A6032E9005C34F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EggJokeWidgetExtension;
+			productName = EggJokeWidgetExtension;
+			productReference = DCEE47662A6032E9005C34F9 /* EggJokeWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -329,6 +421,9 @@
 						CreatedOnToolsVersion = 14.3.1;
 						TestTargetID = DCD3738C2A43065100CD3492;
 					};
+					DCEE47652A6032E9005C34F9 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
 				};
 			};
 			buildConfigurationList = DCD373882A43065100CD3492 /* Build configuration list for PBXProject "EggJoke" */;
@@ -347,6 +442,7 @@
 				DCD3738C2A43065100CD3492 /* EggJoke */,
 				DCD3739C2A43065200CD3492 /* EggJokeTests */,
 				DCD373A62A43065200CD3492 /* EggJokeUITests */,
+				DCEE47652A6032E9005C34F9 /* EggJokeWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -375,6 +471,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DCEE47642A6032E9005C34F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCEE47752A6032EA005C34F9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -393,6 +497,7 @@
 				DC3F32632A52F38400D0F1CD /* TestView.swift in Sources */,
 				DC5A29652A50380E006D4CFB /* EggRepository.swift in Sources */,
 				DCD373932A43065100CD3492 /* ContentView.swift in Sources */,
+				DCEE47782A6032EA005C34F9 /* EggJokeWidget.intentdefinition in Sources */,
 				DCD373C02A430A9F00CD3492 /* HomeView.swift in Sources */,
 				DC69EE702A4A1FD50032A7DE /* ChuckJokeResponse.swift in Sources */,
 				DCFA2AA22A56B2CB00CE840E /* TranslationView++.swift in Sources */,
@@ -423,6 +528,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DCEE47622A6032E9005C34F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCEE476E2A6032E9005C34F9 /* EggJokeWidgetBundle.swift in Sources */,
+				DCEE47702A6032E9005C34F9 /* EggJokeWidgetLiveActivity.swift in Sources */,
+				DCEE47722A6032E9005C34F9 /* EggJokeWidget.swift in Sources */,
+				DCEE47772A6032EA005C34F9 /* EggJokeWidget.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -435,6 +551,11 @@
 			isa = PBXTargetDependency;
 			target = DCD3738C2A43065100CD3492 /* EggJoke */;
 			targetProxy = DCD373A82A43065200CD3492 /* PBXContainerItemProxy */;
+		};
+		DCEE477A2A6032EA005C34F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCEE47652A6032E9005C34F9 /* EggJokeWidgetExtension */;
+			targetProxy = DCEE47792A6032EA005C34F9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -556,6 +677,7 @@
 		DCD373B22A43065200CD3492 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -584,6 +706,7 @@
 		DCD373B32A43065200CD3492 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -681,6 +804,58 @@
 			};
 			name = Release;
 		};
+		DCEE477D2A6032EA005C34F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EggJokeWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = EggJokeWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.haering.EggJoke.EggJokeWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DCEE477E2A6032EA005C34F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EggJokeWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = EggJokeWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.haering.EggJoke.EggJokeWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -716,6 +891,15 @@
 			buildConfigurations = (
 				DCD373B82A43065200CD3492 /* Debug */,
 				DCD373B92A43065200CD3492 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCEE477F2A6032EA005C34F9 /* Build configuration list for PBXNativeTarget "EggJokeWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCEE477D2A6032EA005C34F9 /* Debug */,
+				DCEE477E2A6032EA005C34F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

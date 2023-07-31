@@ -96,14 +96,14 @@ class MainViewModel: ObservableObject {
     }
     
     func prepareJokes(jokes: [String]) {
-        if allJokes.count >= 10 {
+//        if allJokes.count >= 10 {
             for joke in jokes {
                 let presentable = PresentJoke(background: repo.randomBackgroundImage.randomElement() ?? "egg-softboiled", foreground: repo.randomForegroundImage.randomElement() ?? "egg-softboiled", rotation: repo.randomRotation, joke: joke)
                 if !presentJokes.contains(where: {$0.joke == presentable.joke}) {
                     presentJokes.append(presentable)
                 }
             }
-        }
+//        }
     }
     
     func getTranslation() async {
@@ -115,11 +115,23 @@ class MainViewModel: ObservableObject {
         }
     }
     
+    func refreshJokes() async{
+        allJokes.removeAll()
+        presentJokes.removeAll()
+        while allJokes.count < 10 {
+            do {
+                try await fetchJokes()
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
     func fetchJokes() async throws {
         let urlArray = [
 //            "Ninja" : NINJA_URL,
             "Chuck" : CHUCK_URL,
-            "JokeAny" : JOKEANY_URL
+//            "JokeAny" : JOKEANY_URL
         ].randomElement()
         
         switch urlArray?.key {
@@ -146,6 +158,18 @@ class MainViewModel: ObservableObject {
                 prepareJokes(jokes: allJokes)
             }
         default : print("urlArray from fetchJokes had an unexpected dictionary key of unknown...")
+        }
+    }
+    
+    func loadMoreJokes(lastJokeIndice: Int) async {
+        guard presentJokes[lastJokeIndice].id == presentJokes.last?.id else {
+            return
+        }
+        
+        do {
+            try await fetchJokes()
+        } catch {
+            print("Failed to load more jokes: \(error.localizedDescription)")
         }
     }
     
@@ -194,6 +218,24 @@ class MainViewModel: ObservableObject {
                 }
             } catch {
                 print(error)
+                print(error.localizedDescription)
+                throw CustomError.invalidDATA
+            }
+        } else {
+            print(response.statusCode)
+            throw CustomError.invalidRESPONSE
+        }
+    }
+    
+    func fetchWidgetJoke() async throws -> PresentJoke {
+        let (data, response) = try await URLSession.shared.data(from: generateBaseURL(CHUCK_URL))
+        guard let response = response as? HTTPURLResponse else { throw CustomError.invalidRESPONSE }
+            
+        if response.statusCode == 200 {
+            do {
+                let decodedJoke = try JSONDecoder().decode(ChuckJokeResponse.self, from: data)
+                return PresentJoke(background: repo.randomBackgroundImage.randomElement() ?? "", foreground: repo.randomForegroundImage.randomElement() ?? "", rotation: 0, joke: decodedJoke.value)
+            } catch {
                 print(error.localizedDescription)
                 throw CustomError.invalidDATA
             }

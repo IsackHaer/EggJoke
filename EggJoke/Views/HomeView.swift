@@ -40,15 +40,25 @@ struct HomeView: View {
                         Rectangle()
                             .frame(height: 80)
                             .foregroundColor(Color.clear)
-                        ForEach(vm.presentJokes.indices, id: \.self){ indice in
-                            JokeFolded(namespace: namespace, show: $show, joke: vm.presentJokes[indice], indice: indice)
-                                .onTapGesture {
-                                    withAnimation(.spring(response: 0.6, dampingFraction: 0.8)) {
-                                        show.toggle()
-                                        selectedJoke = vm.presentJokes[indice]
-                                        sharedIndice = indice
+                        LazyVStack {
+                            ForEach(vm.presentJokes.indices, id: \.self){ indice in
+                                JokeFolded(namespace: namespace, show: $show, joke: vm.presentJokes[indice], indice: indice)
+                                    .onTapGesture {
+                                        withAnimation(.spring(response: 0.6, dampingFraction: 0.8)) {
+                                            show.toggle()
+                                            selectedJoke = vm.presentJokes[indice]
+                                            sharedIndice = indice
+                                        }
                                     }
-                                }
+                                    .task {
+                                        await vm.loadMoreJokes(lastJokeIndice: indice)
+                                    }
+                            }
+                        }
+                    }
+                    .refreshable {
+                        Task {
+                            await vm.refreshJokes()
                         }
                     }
                     
@@ -71,6 +81,7 @@ struct HomeView: View {
                     }
                 }
             }
+            
             if !show {
                 Button {
                     withAnimation(.spring(response: 0.5, dampingFraction: 0.7)) {

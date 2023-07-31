@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC026F272A6583EF009D76A9 /* PresentJoke.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5A29692A5040A1006D4CFB /* PresentJoke.swift */; };
+		DC026F282A6583FD009D76A9 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD373BD2A430A8C00CD3492 /* MainViewModel.swift */; };
+		DC026F292A658421009D76A9 /* EggRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5A29642A50380E006D4CFB /* EggRepository.swift */; };
+		DC026F2A2A65844E009D76A9 /* JokeDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DCFA2AA42A56C44700CE840E /* JokeDataModel.xcdatamodeld */; };
+		DC026F2B2A658477009D76A9 /* TranslationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD373C82A43313100CD3492 /* TranslationResponse.swift */; };
+		DC026F2C2A658489009D76A9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD373C42A431D3A00CD3492 /* Constants.swift */; };
+		DC026F2D2A658490009D76A9 /* NinjaJokeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC60BDBF2A45C1BE00F34A8D /* NinjaJokeResponse.swift */; };
+		DC026F2E2A658493009D76A9 /* ChuckJokeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC69EE6F2A4A1FD50032A7DE /* ChuckJokeResponse.swift */; };
+		DC026F2F2A658496009D76A9 /* JokeAnyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB700D32A4AC501009AE374 /* JokeAnyResponse.swift */; };
 		DC30F9E22A570A7B00E0367F /* SideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC30F9E12A570A7B00E0367F /* SideBar.swift */; };
 		DC3F32632A52F38400D0F1CD /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3F32622A52F38400D0F1CD /* TestView.swift */; };
 		DC3F32652A5301B100D0F1CD /* JokeFolded.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3F32642A5301B100D0F1CD /* JokeFolded.swift */; };
@@ -532,10 +541,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC026F2E2A658493009D76A9 /* ChuckJokeResponse.swift in Sources */,
 				DCEE476E2A6032E9005C34F9 /* EggJokeWidgetBundle.swift in Sources */,
 				DCEE47702A6032E9005C34F9 /* EggJokeWidgetLiveActivity.swift in Sources */,
+				DC026F272A6583EF009D76A9 /* PresentJoke.swift in Sources */,
 				DCEE47722A6032E9005C34F9 /* EggJokeWidget.swift in Sources */,
+				DC026F2F2A658496009D76A9 /* JokeAnyResponse.swift in Sources */,
+				DC026F2B2A658477009D76A9 /* TranslationResponse.swift in Sources */,
+				DC026F2C2A658489009D76A9 /* Constants.swift in Sources */,
+				DC026F2D2A658490009D76A9 /* NinjaJokeResponse.swift in Sources */,
 				DCEE47772A6032EA005C34F9 /* EggJokeWidget.intentdefinition in Sources */,
+				DC026F282A6583FD009D76A9 /* MainViewModel.swift in Sources */,
+				DC026F2A2A65844E009D76A9 /* JokeDataModel.xcdatamodeld in Sources */,
+				DC026F292A658421009D76A9 /* EggRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -697,6 +715,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.haering.EggJoke;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -726,6 +747,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.haering.EggJoke;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

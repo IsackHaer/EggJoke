@@ -56,7 +56,7 @@ struct EggJokeWidgetEntryView : View {
                 .padding()
 //            Image(entry.joke.background)
         }
-//        .widgetURL(URL(string: "EggJoke://\(entry.joke.joke)"))
+        .widgetURL(URL(string: "EggJoke://JokeUnfolded/\(entry.joke.joke)"))
     }
 }
 

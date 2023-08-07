@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SideBar: View {
     @EnvironmentObject private var vm: MainViewModel
+    @AppStorage("isDarkMode") var isDarkMode = false
     var body: some View {
         VStack{
             Rectangle()
@@ -35,10 +36,10 @@ struct SideBar: View {
                 DetailView(joke: joke)
             }
             
-            Toggle(isOn: $vm.isDarkMode) {
+            Toggle(isOn: $isDarkMode) {
                 HStack{
-                    Image(systemName: !vm.isDarkMode ? "sun.max" : "moon")
-                    Text(!vm.isDarkMode ? "Lightmode" : "Darkmode")
+                    Image(systemName: !isDarkMode ? "sun.max" : "moon")
+                    Text(!isDarkMode ? "Lightmode" : "Darkmode")
                 }
                 .foregroundColor(Color.accentColor)
             }

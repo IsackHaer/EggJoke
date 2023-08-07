@@ -16,7 +16,6 @@ class MainViewModel: ObservableObject {
     }
     
     @Published var navPath = NavigationPath()
-    @Published var isDarkMode = false
     
     @Published var repo = EggRepository()
     private var container: NSPersistentContainer

@@ -27,11 +27,16 @@ struct TranslationView: View {
                     .background(.ultraThinMaterial)
                     .mask(RoundedRectangle(cornerRadius: 30))
                     .padding()
+                
                 Picker("Language", selection: $pickerSelection) {
                     ForEach(Language.allCases) { lang in
                         Text("\(lang.rawValue)").tag(lang.rawValue)
                     }
                 }
+                .padding()
+                .background(.ultraThinMaterial)
+                .cornerRadius(50)
+                
                 Text(vm.translation.first?.text ?? "Nothing to translate")
                     .font(.title3.weight(.bold))
                     .padding()

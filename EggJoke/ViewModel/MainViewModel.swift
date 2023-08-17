@@ -20,7 +20,7 @@ class MainViewModel: ObservableObject {
     @Published var repo = EggRepository()
     private var container: NSPersistentContainer
     
-    var allJokes = [String]()
+    var allJokes = [String]()   //all fetched jokes as String
     @Published var savedJokes = [SavedJoke]()
     @Published var presentJokes = [PresentJoke]()
     @Published var currentStoredJoke: PresentJoke = PresentJoke.sharedJoke
@@ -158,9 +158,9 @@ class MainViewModel: ObservableObject {
      */
     func fetchJokes() async throws {
         let urlArray = [
-            "Ninja" : NINJA_URL,
+//            "Ninja" : NINJA_URL,
             "Chuck" : CHUCK_URL,
-            "JokeAny" : JOKEANY_URL
+//            "JokeAny" : JOKEANY_URL
         ].randomElement()
         
         switch urlArray?.key {
@@ -188,6 +188,8 @@ class MainViewModel: ObservableObject {
             }
         default : print("urlArray from fetchJokes had an unexpected dictionary key of unknown...")
         }
+        
+        print(presentJokes)
     }
     
     func loadMoreJokes(lastJokeIndice: Int) async {
@@ -255,8 +257,8 @@ class MainViewModel: ObservableObject {
      * receiving the data, it attempts to decode it into the specified type using JSONDecoder.
      * If the response status code is not 200, an error is thrown indicating an invalid response.
      *
-     * @param <T> The type to which the fetched data will be decoded.
      * @param url The URL from which to fetch the data.
+     * @param <T> The type to which the fetched data will be decoded.
      * @return An instance of the specified type representing the decoded data.
      * @throws CustomError.invalidURL If the provided URL is invalid.
      * @throws CustomError.invalidRESPONSE If the response status code is not 200.
@@ -264,7 +266,7 @@ class MainViewModel: ObservableObject {
      */
     func fetchData<T: Codable>(_ url : URL, _ decodingType: T.Type) async throws -> T {
         let (data, response) = try await URLSession.shared.data(from: url)
-        guard let resonse = response as? HTTPURLResponse else { throw CustomError.invalidRESPONSE}
+        guard let resonse = response as? HTTPURLResponse else { throw CustomError.invalidRESPONSE }
         if resonse.statusCode == 200{
             do {
                 return try JSONDecoder().decode(T.self, from: data)

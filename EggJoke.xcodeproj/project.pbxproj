@@ -16,6 +16,8 @@
 		DC026F2E2A658493009D76A9 /* ChuckJokeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC69EE6F2A4A1FD50032A7DE /* ChuckJokeResponse.swift */; };
 		DC026F2F2A658496009D76A9 /* JokeAnyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB700D32A4AC501009AE374 /* JokeAnyResponse.swift */; };
 		DC30F9E22A570A7B00E0367F /* SideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC30F9E12A570A7B00E0367F /* SideBar.swift */; };
+		DC32CDF72A8E27DC00ACFCAE /* preview in Resources */ = {isa = PBXBuildFile; fileRef = DC32CDF62A8E27DC00ACFCAE /* preview */; };
+		DC32CDF82A8E27DC00ACFCAE /* preview in Resources */ = {isa = PBXBuildFile; fileRef = DC32CDF62A8E27DC00ACFCAE /* preview */; };
 		DC3F32632A52F38400D0F1CD /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3F32622A52F38400D0F1CD /* TestView.swift */; };
 		DC3F32652A5301B100D0F1CD /* JokeFolded.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3F32642A5301B100D0F1CD /* JokeFolded.swift */; };
 		DC3F32672A53090800D0F1CD /* JokeUnfolded.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3F32662A53090800D0F1CD /* JokeUnfolded.swift */; };
@@ -93,6 +95,7 @@
 
 /* Begin PBXFileReference section */
 		DC30F9E12A570A7B00E0367F /* SideBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBar.swift; sourceTree = "<group>"; };
+		DC32CDF62A8E27DC00ACFCAE /* preview */ = {isa = PBXFileReference; lastKnownFileType = folder; path = preview; sourceTree = "<group>"; };
 		DC3F32622A52F38400D0F1CD /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		DC3F32642A5301B100D0F1CD /* JokeFolded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeFolded.swift; sourceTree = "<group>"; };
 		DC3F32662A53090800D0F1CD /* JokeUnfolded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeUnfolded.swift; sourceTree = "<group>"; };
@@ -190,6 +193,7 @@
 				DCD168082A8E22530013BA39 /* Constants.swift */,
 				DC60BDBE2A45AD7800F34A8D /* FigmaLink.md */,
 				DC60BDBD2A45AD6400F34A8D /* Pflichtenheft Batch005.pages */,
+				DC32CDF62A8E27DC00ACFCAE /* preview */,
 				DCD3738F2A43065100CD3492 /* EggJoke */,
 				DCD373A02A43065200CD3492 /* EggJokeTests */,
 				DCD373AA2A43065200CD3492 /* EggJokeUITests */,
@@ -461,6 +465,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC32CDF72A8E27DC00ACFCAE /* preview in Resources */,
 				DCD373982A43065200CD3492 /* Preview Assets.xcassets in Resources */,
 				DCD373952A43065200CD3492 /* Assets.xcassets in Resources */,
 			);
@@ -485,6 +490,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCEE47752A6032EA005C34F9 /* Assets.xcassets in Resources */,
+				DC32CDF82A8E27DC00ACFCAE /* preview in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

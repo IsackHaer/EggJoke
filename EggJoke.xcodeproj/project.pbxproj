@@ -12,7 +12,6 @@
 		DC026F292A658421009D76A9 /* EggRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5A29642A50380E006D4CFB /* EggRepository.swift */; };
 		DC026F2A2A65844E009D76A9 /* JokeDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DCFA2AA42A56C44700CE840E /* JokeDataModel.xcdatamodeld */; };
 		DC026F2B2A658477009D76A9 /* TranslationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD373C82A43313100CD3492 /* TranslationResponse.swift */; };
-		DC026F2C2A658489009D76A9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD373C42A431D3A00CD3492 /* Constants.swift */; };
 		DC026F2D2A658490009D76A9 /* NinjaJokeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC60BDBF2A45C1BE00F34A8D /* NinjaJokeResponse.swift */; };
 		DC026F2E2A658493009D76A9 /* ChuckJokeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC69EE6F2A4A1FD50032A7DE /* ChuckJokeResponse.swift */; };
 		DC026F2F2A658496009D76A9 /* JokeAnyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB700D32A4AC501009AE374 /* JokeAnyResponse.swift */; };
@@ -27,6 +26,8 @@
 		DC60BDC02A45C1BE00F34A8D /* NinjaJokeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC60BDBF2A45C1BE00F34A8D /* NinjaJokeResponse.swift */; };
 		DC69EE702A4A1FD50032A7DE /* ChuckJokeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC69EE6F2A4A1FD50032A7DE /* ChuckJokeResponse.swift */; };
 		DCB700D42A4AC501009AE374 /* JokeAnyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB700D32A4AC501009AE374 /* JokeAnyResponse.swift */; };
+		DCD168092A8E22530013BA39 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD168082A8E22530013BA39 /* Constants.swift */; };
+		DCD1680A2A8E22530013BA39 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD168082A8E22530013BA39 /* Constants.swift */; };
 		DCD373912A43065100CD3492 /* EggJokeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD373902A43065100CD3492 /* EggJokeApp.swift */; };
 		DCD373932A43065100CD3492 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD373922A43065100CD3492 /* ContentView.swift */; };
 		DCD373952A43065200CD3492 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCD373942A43065200CD3492 /* Assets.xcassets */; };
@@ -36,7 +37,6 @@
 		DCD373AE2A43065200CD3492 /* EggJokeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD373AD2A43065200CD3492 /* EggJokeUITestsLaunchTests.swift */; };
 		DCD373BE2A430A8C00CD3492 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD373BD2A430A8C00CD3492 /* MainViewModel.swift */; };
 		DCD373C02A430A9F00CD3492 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD373BF2A430A9F00CD3492 /* HomeView.swift */; };
-		DCD373C52A431D3A00CD3492 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD373C42A431D3A00CD3492 /* Constants.swift */; };
 		DCD373C72A4330B900CD3492 /* TranslationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD373C62A4330B900CD3492 /* TranslationView.swift */; };
 		DCD373C92A43313100CD3492 /* TranslationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD373C82A43313100CD3492 /* TranslationResponse.swift */; };
 		DCEE47692A6032E9005C34F9 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCEE47682A6032E9005C34F9 /* WidgetKit.framework */; };
@@ -105,6 +105,7 @@
 		DC60BDBF2A45C1BE00F34A8D /* NinjaJokeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NinjaJokeResponse.swift; sourceTree = "<group>"; };
 		DC69EE6F2A4A1FD50032A7DE /* ChuckJokeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckJokeResponse.swift; sourceTree = "<group>"; };
 		DCB700D32A4AC501009AE374 /* JokeAnyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeAnyResponse.swift; sourceTree = "<group>"; };
+		DCD168082A8E22530013BA39 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DCD3738D2A43065100CD3492 /* EggJoke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EggJoke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCD373902A43065100CD3492 /* EggJokeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggJokeApp.swift; sourceTree = "<group>"; };
 		DCD373922A43065100CD3492 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -117,7 +118,6 @@
 		DCD373AD2A43065200CD3492 /* EggJokeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggJokeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DCD373BD2A430A8C00CD3492 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		DCD373BF2A430A9F00CD3492 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		DCD373C42A431D3A00CD3492 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DCD373C62A4330B900CD3492 /* TranslationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationView.swift; sourceTree = "<group>"; };
 		DCD373C82A43313100CD3492 /* TranslationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationResponse.swift; sourceTree = "<group>"; };
 		DCEE47662A6032E9005C34F9 /* EggJokeWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EggJokeWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -187,9 +187,9 @@
 		DCD373842A43065100CD3492 = {
 			isa = PBXGroup;
 			children = (
+				DCD168082A8E22530013BA39 /* Constants.swift */,
 				DC60BDBE2A45AD7800F34A8D /* FigmaLink.md */,
 				DC60BDBD2A45AD6400F34A8D /* Pflichtenheft Batch005.pages */,
-				DCD373C42A431D3A00CD3492 /* Constants.swift */,
 				DCD3738F2A43065100CD3492 /* EggJoke */,
 				DCD373A02A43065200CD3492 /* EggJokeTests */,
 				DCD373AA2A43065200CD3492 /* EggJokeUITests */,
@@ -496,13 +496,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCD373C92A43313100CD3492 /* TranslationResponse.swift in Sources */,
+				DCD168092A8E22530013BA39 /* Constants.swift in Sources */,
 				DC60BDC02A45C1BE00F34A8D /* NinjaJokeResponse.swift in Sources */,
 				DC3F32672A53090800D0F1CD /* JokeUnfolded.swift in Sources */,
 				DCB700D42A4AC501009AE374 /* JokeAnyResponse.swift in Sources */,
 				DC5A296E2A50575F006D4CFB /* DetailView.swift in Sources */,
 				DCFA2AAB2A56DD0900CE840E /* ApiService.swift in Sources */,
 				DCD373C72A4330B900CD3492 /* TranslationView.swift in Sources */,
-				DCD373C52A431D3A00CD3492 /* Constants.swift in Sources */,
 				DC3F32632A52F38400D0F1CD /* TestView.swift in Sources */,
 				DC5A29652A50380E006D4CFB /* EggRepository.swift in Sources */,
 				DCD373932A43065100CD3492 /* ContentView.swift in Sources */,
@@ -548,7 +548,7 @@
 				DCEE47722A6032E9005C34F9 /* EggJokeWidget.swift in Sources */,
 				DC026F2F2A658496009D76A9 /* JokeAnyResponse.swift in Sources */,
 				DC026F2B2A658477009D76A9 /* TranslationResponse.swift in Sources */,
-				DC026F2C2A658489009D76A9 /* Constants.swift in Sources */,
+				DCD1680A2A8E22530013BA39 /* Constants.swift in Sources */,
 				DC026F2D2A658490009D76A9 /* NinjaJokeResponse.swift in Sources */,
 				DCEE47772A6032EA005C34F9 /* EggJokeWidget.intentdefinition in Sources */,
 				DC026F282A6583FD009D76A9 /* MainViewModel.swift in Sources */,

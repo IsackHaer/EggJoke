@@ -5,6 +5,7 @@
 //  Created by Isack Häring on 21.06.23.
 //
 
+
 import Foundation
 import SwiftUI
 import CoreData
@@ -158,9 +159,9 @@ class MainViewModel: ObservableObject {
      */
     func fetchJokes() async throws {
         let urlArray = [
-//            "Ninja" : NINJA_URL,
+            "Ninja" : NINJA_URL,
             "Chuck" : CHUCK_URL,
-//            "JokeAny" : JOKEANY_URL
+            "JokeAny" : JOKEANY_URL
         ].randomElement()
         
         switch urlArray?.key {
